@@ -104,14 +104,14 @@ public class SumaActivity extends AppCompatActivity {
             Double resultado = n1/n2;
 
             if(n2 == 0) {
-                throw new ArithmeticException("Division by zero!");
+                throw new ArithmeticException("Division por cero no permitida");
             }
             lblResultado.setText(Double.toString(resultado));
 
         }
         catch (Exception e)
         {
-            Toast.makeText(this,"Error en la division de los datos" + e.getMessage(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"Error en la division de los datos " + e.getMessage(), Toast.LENGTH_SHORT).show();
         }
 
     }
@@ -124,14 +124,14 @@ public class SumaActivity extends AppCompatActivity {
             Double resultado = n1%n2;
 
             if(n2 == 0) {
-                throw new ArithmeticException("Division by zero!");
+                throw new ArithmeticException("Division por cero no permitida");
             }
             lblResultado.setText(Double.toString(resultado));
 
         }
         catch (Exception e)
         {
-            Toast.makeText(this,"Error en la division de los datos" + e.getMessage(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"Error en la division de los datos " + e.getMessage(), Toast.LENGTH_SHORT).show();
         }
 
     }
