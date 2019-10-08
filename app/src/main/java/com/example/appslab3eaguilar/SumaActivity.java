@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 import android.widget.Toast;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -14,9 +15,10 @@ import java.util.List;
 
 public class SumaActivity extends AppCompatActivity {
     //declaracion de variables
-    EditText txtNum1;
-    EditText txtNum2;
-    TextView lblResultado;
+    private EditText txtNum1;
+    private EditText txtNum2;
+    private TextView lblResultado;
+    private Spinner spn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +34,7 @@ public class SumaActivity extends AppCompatActivity {
         txtNum2 = (EditText)findViewById(R.id.txtNum2);
 
         lblResultado = (TextView)findViewById(R.id.lblRes);
-
+        spn = (Spinner) findViewById(R.id.spn1)
         //lista de datos a mostrar en el spinner
         List<String> Spn_op = new ArrayList<>();
         Spn_op.add("Sumar");
