@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:orientation="vertical"
     tools:context=".SumaActivity">
 
     <LinearLayout
@@ -15,31 +16,31 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Esto es una suma de dos Valores"
-            android:textSize="50px"/>
+            android:textSize="50px" />
 
         <EditText
+            android:id="@+id/txtNum1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Introduzca primer numero"
-            android:id="@+id/txtNum1"/>
+            android:hint="Introduzca primer numero" />
 
         <EditText
+            android:id="@+id/txtNum2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Introduzca segundo numero"
-            android:id="@+id/txtNum2"/>
+            android:hint="Introduzca segundo numero" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sumar"
-            android:onClick="SumarNumeros"/>
+            android:onClick="SumarNumeros"
+            android:text="Sumar" />
 
         <TextView
+            android:id="@+id/lblRes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/lblRes"
-            android:textSize="50px"/>
+            android:textSize="50px" />
 
     </LinearLayout>
 
