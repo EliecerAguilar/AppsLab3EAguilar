@@ -77,6 +77,21 @@ public class SumaActivity extends AppCompatActivity {
 
     }
 
+    public void MultiplicarNumeros(View view){
+        try{
+            int n1 = Integer.parseInt(txtNum1.getText().toString());
+            int n2 = Integer.parseInt(txtNum2.getText().toString());
+
+            int resultado = n1*n2;
+
+            lblResultado.setText(Integer.toString(resultado));
+        }
+        catch (Exception e){
+            Toast.makeText(this,"Error en la suma de los datos" + e.getMessage(), Toast.LENGTH_SHORT).show();
+        }
+
+    }
+
 /*
 @Override
    protected void onStart() {
