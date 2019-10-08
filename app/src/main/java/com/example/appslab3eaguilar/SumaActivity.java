@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
-import android.widget.Switch;
 import android.widget.Toast;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -99,15 +98,15 @@ public class SumaActivity extends AppCompatActivity {
 
     public void DividirNumeros(View view){
         try{
-            int n1 = Integer.parseInt(txtNum1.getText().toString());
-            int n2 = Integer.parseInt(txtNum2.getText().toString());
+            Double n1 = Double.parseDouble(txtNum1.getText().toString());
+            Double n2 = Double.parseDouble(txtNum2.getText().toString());
 
-            int resultado = n1/n2;
+            Double resultado = n1/n2;
 
             if(n2 == 0) {
                 throw new ArithmeticException("Division by zero!");
             }
-            lblResultado.setText(Integer.toString(resultado));
+            lblResultado.setText(Double.toString(resultado));
 
         }
         catch (Exception e)
@@ -119,15 +118,15 @@ public class SumaActivity extends AppCompatActivity {
 
     public void ResiduosNumeros(View view){
         try{
-            int n1 = Integer.parseInt(txtNum1.getText().toString());
-            int n2 = Integer.parseInt(txtNum2.getText().toString());
+            Double n1 = Double.parseDouble(txtNum1.getText().toString());
+            Double n2 = Double.parseDouble(txtNum2.getText().toString());
 
-            int resultado = n1%n2;
+            Double resultado = n1%n2;
 
             if(n2 == 0) {
                 throw new ArithmeticException("Division by zero!");
             }
-            lblResultado.setText(Integer.toString(resultado));
+            lblResultado.setText(Double.toString(resultado));
 
         }
         catch (Exception e)
