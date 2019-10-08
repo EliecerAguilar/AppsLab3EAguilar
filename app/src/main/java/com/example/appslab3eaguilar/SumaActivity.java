@@ -45,6 +45,8 @@ public class SumaActivity extends AppCompatActivity {
 
         //adaptador de los valores del arrayList a la spinner
         ArrayAdapter<String> AdapterList1 =new ArrayAdapter<>(getApplicationContext(),R.layout.support_simple_spinner_dropdown_item,Spn_op);
+        //envio del apadatador al spinner
+        spn.setAdapter(AdapterList1);
 
 
     }
