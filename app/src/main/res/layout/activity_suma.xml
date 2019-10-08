@@ -15,32 +15,34 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Esto es una suma de dos Valores"
-            android:textSize="50px" />
+            android:text="@string/txtV1"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/txtNum1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Introduzca primer numero" />
+            android:hint="@string/txt1"
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/txtNum2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Introduzca segundo numero" />
+            android:hint="@string/txt2"
+            android:textSize="18sp" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="SumarNumeros"
-            android:text="Sumar" />
+            android:text="@string/btn1" />
 
         <TextView
             android:id="@+id/lblRes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="50px" />
+            android:textSize="18sp" />
 
     </LinearLayout>
 

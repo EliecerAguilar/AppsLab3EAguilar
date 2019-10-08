@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">AppsLab3EAguilar</string>
+    <string name="txtV1">Esto es una suma de dos Valores</string>
+    <string name="txt1">Introduzca primer numero</string>
+    <string name="txt2">Introduzca segundo numero</string>
+    <string name="btn1">calcular</string>
 </resources>

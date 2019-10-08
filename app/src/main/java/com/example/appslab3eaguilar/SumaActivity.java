@@ -3,9 +3,13 @@ package com.example.appslab3eaguilar;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Toast;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class SumaActivity extends AppCompatActivity {
@@ -28,10 +32,12 @@ public class SumaActivity extends AppCompatActivity {
         txtNum2 = (EditText)findViewById(R.id.txtNum2);
 
         lblResultado = (TextView)findViewById(R.id.lblRes);
+
+
+
     }
 
-    public void SumarNumeros(View view)
-    {
+    public void SumarNumeros(View view){
         try{
             int n1 = Integer.parseInt(txtNum1.getText().toString());
             int n2 = Integer.parseInt(txtNum2.getText().toString());
@@ -40,12 +46,14 @@ public class SumaActivity extends AppCompatActivity {
 
             lblResultado.setText(Integer.toString(resultado));
         }
-        catch (Exception e)
-        {
+        catch (Exception e){
             Toast.makeText(this,"Error en la suma de los datos" + e.getMessage(), Toast.LENGTH_SHORT).show();
         }
 
     }
+
+
+
 /*
 @Override
    protected void onStart() {
