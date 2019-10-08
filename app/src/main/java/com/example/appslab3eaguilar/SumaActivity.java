@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.Switch;
 import android.widget.Toast;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -134,6 +135,31 @@ public class SumaActivity extends AppCompatActivity {
             Toast.makeText(this,"Error en la division de los datos" + e.getMessage(), Toast.LENGTH_SHORT).show();
         }
 
+    }
+
+    public void calcularValor(View view){
+        String selectedItem ="";
+        selectedItem = spn.getSelectedItem().toString();
+
+        switch (selectedItem){
+            case "Sumar":
+                SumarNumeros(view);
+            break;
+            case "Restar":
+                RestarNumeros(view);
+            break;
+            case "Multiplicar":
+                MultiplicarNumeros(view);
+            break;
+            case "Dividir":
+                DividirNumeros(view);
+            break;
+            case "Residuo":
+                ResiduosNumeros(view);
+            break;
+            default:
+                Toast.makeText(getApplicationContext(),"opcion no valida",Toast.LENGTH_LONG).show();
+        }
     }
 
 /*

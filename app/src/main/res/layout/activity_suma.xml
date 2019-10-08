@@ -41,7 +41,10 @@
             android:id="@+id/calcular"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/btn1"/>
+            android:text="@string/btn1"
+            android:onClick="DividirNumeros"/>
+
+
         <TextView
             android:id="@+id/lblRes"
             android:layout_width="match_parent"
