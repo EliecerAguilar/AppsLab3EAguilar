@@ -112,6 +112,26 @@ public class SumaActivity extends AppCompatActivity {
 
     }
 
+    public void ResiduosNumeros(View view){
+        try{
+            int n1 = Integer.parseInt(txtNum1.getText().toString());
+            int n2 = Integer.parseInt(txtNum2.getText().toString());
+
+            int resultado = n1%n2;
+
+            if(n2 == 0) {
+                throw new ArithmeticException("Division by zero!");
+            }
+            lblResultado.setText(Integer.toString(resultado));
+
+        }
+        catch (Exception e)
+        {
+            Toast.makeText(this,"Error en la division de los datos" + e.getMessage(), Toast.LENGTH_SHORT).show();
+        }
+
+    }
+
 /*
 @Override
    protected void onStart() {
