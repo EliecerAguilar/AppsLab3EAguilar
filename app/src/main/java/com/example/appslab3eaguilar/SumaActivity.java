@@ -34,7 +34,7 @@ public class SumaActivity extends AppCompatActivity {
         txtNum2 = (EditText)findViewById(R.id.txtNum2);
 
         lblResultado = (TextView)findViewById(R.id.lblRes);
-        spn = (Spinner) findViewById(R.id.spn1)
+        spn = (Spinner) findViewById(R.id.spn1);
         //lista de datos a mostrar en el spinner
         List<String> Spn_op = new ArrayList<>();
         Spn_op.add("Sumar");
