@@ -33,6 +33,16 @@ public class SumaActivity extends AppCompatActivity {
 
         lblResultado = (TextView)findViewById(R.id.lblRes);
 
+        //lista de datos a mostrar en el spinner
+        List<String> Spn_op = new ArrayList<>();
+        Spn_op.add("Sumar");
+        Spn_op.add("Restar");
+        Spn_op.add("Multiplicar");
+        Spn_op.add("Dividir");
+        Spn_op.add("Residuo");
+
+        //adaptador de los valores del arrayList a la spinner
+        ArrayAdapter<String> AdapterList1 =new ArrayAdapter<>(getApplicationContext(),R.layout.support_simple_spinner_dropdown_item,Spn_op);
 
 
     }
